@@ -61,7 +61,7 @@ function App() {
               element={
                 <TextForm
                   showAlert={showAlert}
-                  heading="Try TextUtils - Word Counter, Character Counter, Remove Extra Spaces" mode={mode}
+                  heading="TextUtils - Word Counter, Character Counter, Remove Extra Spaces" mode={mode}
                 />
               }
             />

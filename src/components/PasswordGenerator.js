@@ -34,7 +34,7 @@ export default function PasswordGenerator(props) {
     useEffect(() => { passwordGenerator() }, [length, numberAllowed, charAllowed, passwordGenerator])
     return (
         <>
-            <div className="row align-items-start" style={{ color: props.mode === 'dark' ? 'white' : '#042743' }}>
+            <div className="row align-items-start" >
                 <div className="container my-3" style={{ color: props.mode === 'dark' ? 'white' : '#042743' }}>
 
                     <h1>Password Generator</h1>
@@ -52,7 +52,7 @@ export default function PasswordGenerator(props) {
                         <div className="p-3 border bg-light">
 
                             <input type="range" min={6} max={100} value={length} id="rangeInput" onChange={(e) => { setLength(e.target.value) }} />
-                            <label htmlFor="rangeInput">Length: {length}</label>
+                            <label htmlFor="rangeInput">Selected Length: {length}</label>
                         </div>
                     </div>
 
