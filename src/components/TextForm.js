@@ -48,11 +48,11 @@ export default function TextForm(props) {
       <div className="mb-3">
         <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode ==='dark'?'grey':'white', color: props.mode ==='dark'?'white':'#042743'}} id="myTextBox" rows="8" />
       </div>
-      <button className="btn btn-primary mx-1" onClick={handleUppercaseClick}>Convert to Uppercase </button>
-      <button className="btn btn-primary mx-1" onClick={handlelowercaseClick}>Convert to Lowercase </button>
-      <button className="btn btn-primary mx-1" onClick={handleCopy}>Copy Text to ClipBoard </button>
-      <button className="btn btn-primary mx-1" onClick={handleClearText}>Clear Text </button>
-      <button className="btn btn-primary mx-1" onClick={handleExtraSpace}>Remove Extra Space </button>
+      <button className="btn btn-outline-info mx-1" onClick={handleUppercaseClick}>Convert to Uppercase </button>
+      <button className="btn btn-outline-warning mx-1" onClick={handlelowercaseClick}>Convert to Lowercase </button>
+      <button className="btn btn-outline-success mx-1" onClick={handleCopy}>Copy Text to ClipBoard </button>
+      <button className="btn btn-outline-danger mx-1" onClick={handleClearText}>Clear Text </button>
+      <button className="btn btn-outline-primary mx-1" onClick={handleExtraSpace}>Remove Extra Space </button>
 
 
       </div>

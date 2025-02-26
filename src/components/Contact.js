@@ -22,8 +22,8 @@ export default function Contact(props) {
   };
 
   return (
-    <div className="container" style={{color: props.mode ==='dark'?'white':'#042743'}}>
-      <form className="form-control" onSubmit={handleSave}>
+    <div className="container" style={{ color: props.mode === 'dark' ? 'white' : '#042743' }}>
+      <form className="form-control" onSubmit={handleSave} >
         <label >
           Enter Your Mail/ Message Here, this will be sent to the firebase
           Server

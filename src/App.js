@@ -48,7 +48,7 @@ function App() {
     <>
       <Router>
         <Navbar
-          title="TextUtils by Otical"
+          title="Otical"
           aboutText="About Us"
           mode={mode}
           toggleMode={toggleMode}
@@ -65,9 +65,9 @@ function App() {
                 />
               }
             />
-            <Route exact path="password" element={<PasswordGenerator></PasswordGenerator>} />
-            <Route exact path="about" element={<About />} />
-            <Route exact path="contact" element={<Contact />}/>
+            <Route exact path="password" element={<PasswordGenerator mode={mode} showAlert={showAlert}/>} />
+            <Route exact path="about" element={<About mode={mode} />} />
+            <Route exact path="contact" element={<Contact mode={mode} />}/>
           </Routes>
         </div>
       </Router>
