@@ -70,7 +70,7 @@ export default function PasswordGenerator(props) {
                             <input type="checkbox" defaultChecked={charAllowed} id="charInput" onChange={() => {
                                 setCharAllowed((prev) => !prev)
                             }} />
-                            <label htmlFor="charInput">Include Characters</label>
+                            <label htmlFor="charInput">Include Special Characters</label>
                         </div>
                     </div>
 
