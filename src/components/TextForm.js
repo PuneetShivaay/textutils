@@ -25,8 +25,12 @@ export default function TextForm(props) {
     let exrtaSpaceText = text.split(/[ ]+/);
     setText(exrtaSpaceText.join(" "))
     props.showAlert("Removed Extra Space", "success")
+  }
 
-
+  const handleClearText = () => {
+    let clearText  ="";
+    setText(clearText)
+    props.showAlert("All Text has been cleared", "success")
   }
 
 
@@ -47,6 +51,7 @@ export default function TextForm(props) {
       <button className="btn btn-primary mx-1" onClick={handleUppercaseClick}>Convert to Uppercase </button>
       <button className="btn btn-primary mx-1" onClick={handlelowercaseClick}>Convert to Lowercase </button>
       <button className="btn btn-primary mx-1" onClick={handleCopy}>Copy Text to ClipBoard </button>
+      <button className="btn btn-primary mx-1" onClick={handleClearText}>Clear Text </button>
       <button className="btn btn-primary mx-1" onClick={handleExtraSpace}>Remove Extra Space </button>
 
 

@@ -3,11 +3,13 @@ import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import About from "./components/About";
 
+
 import React, { useState } from "react";
 import Alert from "./components/Alert";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import PasswordGenerator from "./components/PasswordGenerator";
 
 function App() {
   const [mode, setMode] = useState("light"); //whether ldark mode is enabled or not
@@ -63,6 +65,7 @@ function App() {
                 />
               }
             />
+            <Route exact path="password" element={<PasswordGenerator></PasswordGenerator>} />
             <Route exact path="about" element={<About />} />
             <Route exact path="contact" element={<Contact />}/>
           </Routes>
